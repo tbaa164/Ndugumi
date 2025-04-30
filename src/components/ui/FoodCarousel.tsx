@@ -149,7 +149,7 @@ export const FoodCarousel: React.FC<FoodCarouselProps> = ({ className }) => {
         key={currentItem?.id}
         transition={{ duration: 0.3 }}
       >
-        {currentItem?.type === 'legume' ? 'Légume' : 'Plat complet'}
+        {currentItem?.type === 'legume' ? 'Légume' : 'Kit prêt à cuisiner'}
       </motion.div>
 
 
