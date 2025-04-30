@@ -15,7 +15,6 @@ import pouletYassa from '../sections/assets/images/plats/poulet-yassa.avif';
 import cestBonDiola from '../sections/assets/images/plats/Cest-bon-diola.jpg';
 import mafe from '../sections/assets/images/plats/mafé.jpg';
 import soupouKandia from '../sections/assets/images/plats/soupou kandia.webp';
-import thieb from '../sections/assets/images/plats/Thieb.jpeg';
 
 // Types
 interface CarouselItem {
@@ -91,13 +90,6 @@ export const FoodCarousel: React.FC<FoodCarouselProps> = ({ className }) => {
       name: 'Soupou Kandia', 
       image: soupouKandia,
       description: 'Délicieuse soupe traditionnelle'
-    },
-    { 
-      id: 9, 
-      type: 'plat', 
-      name: 'Thieb', 
-      image: thieb,
-      description: 'Riz blanc accompagné de poisson'
     },
   ];
 
