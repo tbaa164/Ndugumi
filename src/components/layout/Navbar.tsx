@@ -28,7 +28,7 @@ export const Navbar = () => {
         <span className="flex items-center">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-2xl font-extrabold tracking-tight text-ndugumi-green font-sans drop-shadow-sm select-none focus:outline-none focus:ring-2 focus:ring-ndugumi-green focus:ring-offset-2 transition-shadow"
+            className="text-2xl font-extrabold tracking-tight text-ndugumi-green font-sans drop-shadow-sm select-none focus:outline-none transition-shadow"
             style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
             aria-label="Remonter en haut de la page"
           >
