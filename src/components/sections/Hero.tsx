@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import CallToAction from '@/components/ui/CallToAction';
 import LogoGroup from '@/components/ui/LogoGroup';
+import FoodCarousel from '@/components/ui/FoodCarousel';
 
 export const Hero = () => {
   // Liens des applications
@@ -60,31 +61,12 @@ export const Hero = () => {
           </motion.div>
 
           <motion.div 
-            className="relative lg:h-[500px]"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            className="mt-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="relative h-full">
-              <motion.img 
-                src="/assets/images/hero-image.png" 
-                alt="Légumes frais Ndugumi" 
-                className="rounded-2xl shadow-2xl object-cover h-full w-full"
-                initial={{ y: 20 }}
-                animate={{ y: 0 }}
-                transition={{ 
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  ease: "easeInOut"
-                }}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.src = "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80";
-                }}
-              />
-             
-            </div>
+            <FoodCarousel className="w-full h-auto rounded-2xl shadow-xl" />
           </motion.div>
         </div>
 
@@ -125,15 +107,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <img 
-              src="/assets/images/hero-image.png" 
-              alt="Légumes frais Ndugumi" 
-              className="rounded-2xl shadow-xl w-full h-auto"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.src = "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80";
-              }}
-            />
+            <FoodCarousel className="w-full h-auto rounded-2xl shadow-xl" />
           </motion.div>
         </div>
       </div>
