@@ -159,20 +159,7 @@ export const FoodCarousel: React.FC<FoodCarouselProps> = ({ className }) => {
       >
         {currentItem?.type === 'legume' ? 'Légume' : 'Plat complet'}
       </motion.div>
-      
-      {/* Badge "Commander tous les ingrédients" pour les plats */}
-      {currentItem?.type === 'plat' && (
-        <motion.div 
-          className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm text-ndugumi-green-dark px-3 py-1 rounded-full text-sm font-medium flex items-center shadow-md"
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          key={`badge-${currentItem?.id}`}
-          transition={{ duration: 0.3, delay: 0.1 }}
-        >
-          <ShoppingBasket className="w-4 h-4 mr-1" />
-          Commander tous les ingrédients
-        </motion.div>
-      )}
+
 
       {/* Carrousel principal */}
       <div className="overflow-hidden" ref={emblaRef}>
@@ -193,19 +180,7 @@ export const FoodCarousel: React.FC<FoodCarouselProps> = ({ className }) => {
                 <h3 className="text-2xl font-bold mb-1">{item.name}</h3>
                 <p className="text-white/90">{item.description}</p>
                 
-                {/* Bouton d'action */}
-                <motion.button 
-                  className={`mt-3 px-4 py-2 rounded-md flex items-center text-sm font-medium ${
-                    item.type === 'legume' 
-                      ? 'bg-ndugumi-green hover:bg-ndugumi-green-dark' 
-                      : 'bg-ndugumi-orange hover:bg-ndugumi-orange-dark'
-                  }`}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <ShoppingBasket className="w-4 h-4 mr-2" />
-                  {item.type === 'legume' ? 'Commander ce légume' : 'Commander les ingrédients'}
-                </motion.button>
+          
               </div>
             </div>
           ))}
