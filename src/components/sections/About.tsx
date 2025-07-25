@@ -35,7 +35,7 @@ export const About = () => {
               viewport={{ once: true }}
               className="section-title"
             >
-              À propos de Ndugumi
+              À propos de NDUGUMi
             </motion.h2>
             <motion.p 
               whileInView={{ y: [30, 0], opacity: [0, 1] }}
@@ -43,7 +43,7 @@ export const About = () => {
               viewport={{ once: true }}
               className="text-gray-700 mb-6"
             >
-              Ndugumi a été fondé avec une mission simple : connecter les agriculteurs locaux directement avec les consommateurs, en éliminant les intermédiaires et en s'assurant que les agriculteurs reçoivent une rémunération équitable pendant que les consommateurs profitent de produits frais et de haute qualité.
+              NDUGUMi a été fondé avec une mission simple : connecter les agriculteurs locaux directement avec les consommateurs, en éliminant les intermédiaires et en s'assurant que les agriculteurs reçoivent une rémunération équitable pendant que les consommateurs profitent de produits frais et de haute qualité.
             </motion.p>
             <motion.p 
               whileInView={{ y: [30, 0], opacity: [0, 1] }}

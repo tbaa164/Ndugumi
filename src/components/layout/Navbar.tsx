@@ -25,16 +25,20 @@ export const Navbar = () => {
       }`}
     >
       <div className="container-custom flex items-center justify-between">
-        <span className="flex items-center">
+        <div className="flex items-center space-x-2">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-2xl font-extrabold tracking-tight text-ndugumi-green font-sans drop-shadow-sm select-none focus:outline-none transition-shadow"
+            className="text-2xl font-extrabold tracking-tight text-ndugumi-green font-sans drop-shadow-sm select-none focus:outline-none transition-shadow relative group"
             style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
             aria-label="Remonter en haut de la page"
           >
-            Ndugumi
+            NDUGUMi
+            <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-ndugumi-green/30 group-hover:bg-ndugumi-green/50 transition-colors duration-200"></span>
           </button>
-        </span>
+          <span className="text-xs text-gray-500 font-light italic border-l border-gray-300 pl-2">
+            par Kwingo
+          </span>
+        </div>
         {/* Mobile menu button */}
         <button
           className="md:hidden p-2 rounded-md outline-none focus:ring-2 focus:ring-ndugumi-green focus:ring-offset-2 transition-shadow"

@@ -51,7 +51,7 @@ export const Hero = () => {
               <br/>Livré Chez Vous
             </h1>
             <p className="text-gray-700 text-lg mb-8">
-              Ndugumi connecte les agriculteurs locaux avec les consommateurs urbains, pendant que Ndugumi Drive assure des livraisons rapides et fiables dans tout le Sénégal.
+              NDUGUMi connecte les agriculteurs locaux avec les consommateurs urbains, pendant que NDUGUMi Drive assure des livraisons rapides et fiables dans tout le Sénégal.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <CallToAction variant="contact" href="#contact" withIcon={true}>

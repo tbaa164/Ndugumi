@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Ndugumi</h3>
+            <h3 className="text-xl font-bold mb-4">NDUGUMi</h3>
             <p className="text-gray-300 mb-4">
               Livraison des meilleurs produits frais directement des agriculteurs à votre porte.
             </p>
@@ -75,7 +75,7 @@ export const Footer = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-ndugumi-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-gray-300">+221 77 123 45 67</span>
+                <span className="text-gray-300">+221 77 775 82 82</span>
               </li>
             </ul>
           </div>
@@ -83,7 +83,7 @@ export const Footer = () => {
         
         <div className="border-t border-gray-700 mt-12 pt-8">
           <p className="text-center text-gray-400">
-            &copy; {currentYear} Ndugumi. Tous droits réservés.
+            &copy; {currentYear} NDUGUMi. Tous droits réservés.
           </p>
         </div>
       </div>

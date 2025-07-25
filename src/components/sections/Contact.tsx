@@ -132,7 +132,7 @@ export const Contact = () => {
             
             <form ref={form} className="space-y-6" onSubmit={handleSubmit}>
               {/* Champs cachés pour le template */}
-              <input type="hidden" name="to_email" value="Ndugumi@ndugumi.com" />
+              <input type="hidden" name="to_email" value="Ndugalmaci@gmail.com" />
               <input type="hidden" name="email" id="from_email" />
               <input type="hidden" name="subject" value="Nouveau message depuis le site Ndugumi" />
               
